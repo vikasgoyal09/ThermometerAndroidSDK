@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_activity_main_scan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/scan"
+                android:padding="6dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_bright"
+                />
+
+        <Button
+                android:id="@+id/btn_activity_main_stop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"
+                android:padding="6dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_bright"
+                />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_activity_main_devices"
+            android:scrollbars="none"
+            android:background="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+
+</LinearLayout>
